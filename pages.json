@@ -1,0 +1,90 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": {
+						"searchInput":{
+							"align": "left",
+							"borderRadius": "4px",
+							"placeholder": "请输入搜索内容",
+							"backgroundColor": "#f7f7f7",
+							"disable": true
+						},
+						"buttons":[
+							{
+								"float": "left",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text":"\ue600"
+							},
+							{
+								"float": "right",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"text":"\ue891"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/component/classify/index",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/component/car/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/component/user/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+			"color": "#7A7E83",
+			"selectedColor": "#f46d01",
+			"borderStyle": "black",
+			"backgroundColor": "#ffffff",
+			"height": "50px",
+			"fontSize": "10px",
+			"iconWidth": "24px",
+			"spacing": "3px",
+			"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/selected/home.svg",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/component/classify/index",
+				"iconPath": "static/tabbar/classify.svg",
+				"selectedIconPath": "static/tabbar/selected/classify.svg",
+				"text": "分类"
+			},{
+				"pagePath": "pages/component/car/index",
+				"iconPath": "static/tabbar/car.svg",
+				"selectedIconPath": "static/tabbar/selected/car.svg",
+				"text": "购物车"
+			},{
+				"pagePath": "pages/component/user/index",
+				"iconPath": "static/tabbar/user.svg",
+				"selectedIconPath": "static/tabbar/selected/user.svg",
+				"text": "我的"
+			}]
+		},
+	"uniIdRouter": {}
+}
